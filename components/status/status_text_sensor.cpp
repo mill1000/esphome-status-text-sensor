@@ -5,7 +5,7 @@
 #include "esphome/core/log.h"
 
 namespace esphome {
-namespace status_text_sensor {
+namespace status {
 
 static const char *const TAG = "status_text_sensor";
 
@@ -23,5 +23,5 @@ void StatusTextSensor::dump_config() {
   LOG_TEXT_SENSOR("", "Status Text Sensor", this);
 }
 
-}  // namespace status_text_sensor
+}  // namespace status
 }  // namespace esphome

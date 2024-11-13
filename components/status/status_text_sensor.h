@@ -4,7 +4,7 @@
 #include "esphome/core/component.h"
 
 namespace esphome {
-namespace status_text_sensor {
+namespace status {
 
 class StatusTextSensor : public text_sensor::TextSensor, public Component {
  public:
@@ -12,5 +12,5 @@ class StatusTextSensor : public text_sensor::TextSensor, public Component {
   void dump_config() override;
 };
 
-}  // namespace status_text_sensor
+}  // namespace status
 }  // namespace esphome

@@ -1,12 +1,12 @@
 external_components:
   # Pull from Github
-  - source: github://mill1000/esphome-status-sensor@main
-    components: [status_text_sensor]
-  # # Pull from local folder
+  - source: github://mill1000/esphome-status-text-sensor@main
+    components: [status]
+  # Pull from local folder
   # - source: components
-  #   components: [status_sensor]
-
+  #   components: [status]
 
 text_sensor:
   - platform: status
+    name: Status
    
