@@ -1,9 +1,7 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
 from esphome.components import text_sensor
-from esphome.const import (
-    ENTITY_CATEGORY_DIAGNOSTIC,
-)
+from esphome.const import ENTITY_CATEGORY_DIAGNOSTIC
 
 status_ns = cg.esphome_ns.namespace("status")
 StatusTextSensor = status_ns.class_(
