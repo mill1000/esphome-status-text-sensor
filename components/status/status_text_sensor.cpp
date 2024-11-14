@@ -9,7 +9,7 @@ namespace status {
 
 static const char *const TAG = "status_text_sensor";
 
-void StatusTextSensor::loop() {
+void StatusTextSensor::update() {
   if ((App.get_app_state() & STATUS_LED_ERROR) != 0u) {
     this->publish_state("Error");
   } else if ((App.get_app_state() & STATUS_LED_WARNING) != 0u) {

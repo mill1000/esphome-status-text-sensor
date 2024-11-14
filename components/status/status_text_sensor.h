@@ -8,7 +8,7 @@ namespace status {
 
 class StatusTextSensor : public text_sensor::TextSensor, public Component {
  public:
-  void loop() override;
+  void update() override;
   void dump_config() override;
 };
 
