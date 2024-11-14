@@ -6,7 +6,7 @@
 namespace esphome {
 namespace status {
 
-class StatusTextSensor : public text_sensor::TextSensor, public Component {
+class StatusTextSensor : public text_sensor::TextSensor, public PollingComponent {
  public:
   void update() override;
   void dump_config() override;
